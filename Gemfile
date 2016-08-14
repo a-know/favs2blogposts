@@ -3,3 +3,7 @@
 source "https://rubygems.org"
 
 # gem "rails"
+
+gem 'hatenablog'
+gem 'sinatra'
+gem 'twitter'
