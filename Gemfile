@@ -5,5 +5,6 @@ source "https://rubygems.org"
 # gem "rails"
 
 gem 'hatenablog'
+gem 'pry'
 gem 'sinatra'
 gem 'twitter'
