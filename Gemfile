@@ -6,8 +6,15 @@ source "https://rubygems.org"
 
 gem 'activerecord'
 gem 'hatenablog'
-gem 'pg'
 gem 'pry'
 gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'twitter'
+
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
