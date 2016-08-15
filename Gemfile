@@ -12,6 +12,7 @@ gem 'sinatra-activerecord'
 gem 'twitter'
 
 group :development, :test do
+  gem 'foreman'
   gem 'sqlite3'
 end
 
