@@ -1,0 +1,6 @@
+consumer_key: <%= ENV['HATENA_CONSUMER_KEY'] %>
+consumer_secret: <%= ENV['HATENA_CONSUMER_SECRET'] %>
+access_token: <%= ENV['HATENA_ACCESS_TOKEN'] %>
+access_token_secret: <%= ENV['HATENA_ACCESS_TOKEN_SECRET'] %>
+user_id: <%= ENV['HATENA_USER_ID'] %>
+blog_id: <%= ENV['HATENA_BLOG_ID'] %>
