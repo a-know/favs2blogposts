@@ -1,0 +1,57 @@
+{
+  "name": "favs2blogposts",
+  "description": "post twitter favs to hatena-blog.",
+  "env": {
+    "TWITTER_CONSUMER_KEY": {
+      "description": "consumer_key of your twitter app",
+      "value": ""
+    },
+    "TWITTER_CONSUMER_SECRET": {
+      "description": "consumer_secret of your twitter app",
+      "value": ""
+    },
+    "TWITTER_ACCESS_TOKEN": {
+      "description": "access_token of your twitter app",
+      "value": ""
+    },
+    "TWITTER_ACCESS_TOKEN_SECRET": {
+      "description": "access_token_secret of your twitter app",
+      "value": ""
+    },
+    "HATENA_CONSUMER_KEY": {
+      "description": "consumer_key of your hatena app",
+      "value": ""
+    },
+    "HATENA_CONSUMER_SECRET": {
+      "description": "consumer_secret of your hatena app",
+      "value": ""
+    },
+    "HATENA_ACCESS_TOKEN": {
+      "description": "access_token of your hatena app",
+      "value": ""
+    },
+    "HATENA_ACCESS_TOKEN_SECRET": {
+      "description": "access_token_secret of your hatena app",
+      "value": ""
+    },
+    "HATENA_USER_ID": {
+      "description": "hatena_id for blogpost",
+      "value": ""
+    },
+    "HATENA_BLOG_ID": {
+      "description": "target blog id. exmaple: example.hateblo.jp",
+      "value": ""
+    },
+    "USER_SCREEN_NAME": {
+      "description": "target twitter id without `@`.",
+      "value": ""
+    },
+    "BLOG_TIMEZONE": {
+      "description": "target blog timezone. example: Asia/Tokyo",
+      "value": "Asia/Tokyo"
+    }
+  },
+  "addons": [
+    "scheduler:standard"
+  ]
+}
