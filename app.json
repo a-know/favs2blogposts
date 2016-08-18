@@ -55,6 +55,6 @@
     "scheduler:standard"
   ],
   "scripts": {
-    "postdeploy": "bundle exec rake db:migrate && ruby app.rb"
+    "postdeploy": "bundle exec rake db:migrate && ruby init.rb"
   }
 }
