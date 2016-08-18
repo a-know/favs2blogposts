@@ -1,4 +1,3 @@
-require 'sinatra'
 require 'active_record'
 require 'twitter'
 
@@ -20,15 +19,6 @@ def latest_fav
   @latest_fav ||= (LatestFavsTweets.order(:created_at).all.first || LatestFavsTweets.new)
 end
 
-def register_latest_fav
-  favs = twitter_client.favorites(ENV['USER_SCREEN_NAME'], count: 1)
-  latest_fav.status_id = favs.first.id
-  latest_fav.save!
-end
-
-get '/' do
-end
-
-get '/register' do
-  register_latest_fav
-end
+favs = twitter_client.favorites(ENV['USER_SCREEN_NAME'], count: 1)
+latest_fav.status_id = favs.first.id
+latest_fav.save!
