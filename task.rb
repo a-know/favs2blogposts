@@ -27,9 +27,9 @@ def register_latest_fav
   latest_fav.save!
 end
 
-def now
+def yesterday
   old = ENV['TZ']
-  utc = Time.now.dup.utc
+  utc = Time.now.dup.utc - 86400
   ENV['TZ'] = ENV['BLOG_TIMEZONE']
   output = utc.localtime
   ENV['TZ'] = old
@@ -52,5 +52,5 @@ favs.each do |fav|
 end
 
 Hatenablog::Client.create do |blog|
-  blog.post_entry((now - 86400).strftime("%Y-%m-%d のfavs"), content, ['今日の favs'])
+  blog.post_entry(yesterday.strftime("%Y-%m-%d のfavs"), content, ['今日の favs'])
 end
