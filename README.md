@@ -36,9 +36,9 @@ favs2blogposts の動作には以下の4つの情報が必要です。
 
 ### 3. heroku へのデプロイを行う
 
-以下のボタンを押すと、デプロイ設定画面が開きます。
-
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+↑のボタンを押すと、以下の様なデプロイ設定画面が開きます。
 
 ![Deploy](https://cloud.githubusercontent.com/assets/1097533/17794851/045d2de4-65ee-11e6-87cb-87ca6cb34eac.png)
 
