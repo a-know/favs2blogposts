@@ -40,7 +40,7 @@ favs2blogposts の動作には以下の4つの情報が必要です。
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-[Deploy](https://cloud.githubusercontent.com/assets/1097533/17794851/045d2de4-65ee-11e6-87cb-87ca6cb34eac.png)
+![Deploy](https://cloud.githubusercontent.com/assets/1097533/17794851/045d2de4-65ee-11e6-87cb-87ca6cb34eac.png)
 
 開いた画面で、以下の情報を入力してください。
 
@@ -80,7 +80,7 @@ favs2blogposts の動作には以下の4つの情報が必要です。
 
 これらの情報の入力が完了したら、 `Deploy for Free` ボタンを押し、しばらくすると以下の様な表示が出て、デプロイが完了します。
 
-[finished](https://cloud.githubusercontent.com/assets/1097533/17794880/446ffc7c-65ee-11e6-88e6-36990b404bca.png)
+![finished](https://cloud.githubusercontent.com/assets/1097533/17794880/446ffc7c-65ee-11e6-88e6-36990b404bca.png)
 
 
 ### 4. 定期実行の設定
@@ -88,11 +88,11 @@ favs2blogposts の動作には以下の4つの情報が必要です。
 
 heroku app の管理画面 `https://dashboard.heroku.com/apps/{3. で指定した App Name}` を開き、 `Heroku Scheduler` リンクを押します。
 
-[schedule](https://cloud.githubusercontent.com/assets/1097533/17794888/59d1b5c4-65ee-11e6-8471-1e87cce4286d.png)
+![schedule](https://cloud.githubusercontent.com/assets/1097533/17794888/59d1b5c4-65ee-11e6-8471-1e87cce4286d.png)
 
 するとスケジュール設定画面になりますので、以下の画像を参考に設定をし保存してください。
 
-[Setting schedule](https://cloud.githubusercontent.com/assets/1097533/17794893/7505e66c-65ee-11e6-9737-ffbd9f306be2.png)
+![Setting schedule](https://cloud.githubusercontent.com/assets/1097533/17794893/7505e66c-65ee-11e6-9737-ffbd9f306be2.png)
 
 注意事項としては、実行時間の指定は UTC での指定になる点です。
 おすすめの指定は `15:30` です。これは日本時間でいうと 0:30 になり、そのタイミングで前日の favs を収集し投稿することになります。
